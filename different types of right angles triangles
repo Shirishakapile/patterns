@@ -1,0 +1,150 @@
+import java.util.*;
+class Main
+{
+    public static void main(String []args)
+    {
+        //Write your code here
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        if(a>0)
+        {
+            for(int i=1;i<=a;i++)
+            {
+                for(int j=1;j<=a;j++)
+                {
+                    int t=j,c=0;
+                    while(t>0)
+                    {
+                        t=t/10;
+                        c++;
+                    }
+                    if(c==1)
+                    {
+                    if(j<i)
+                    System.out.print("  ");
+                    else
+                    System.out.print(j+" ");
+                    }
+                    else
+                    {
+                        if(j<i)
+                        System.out.print("   ");
+                        else
+                        System.out.print(j+" ");
+                    }
+                }
+                System.out.println();
+            }
+        }
+        else
+        System.out.println("Invalid Input");
+    }
+}
+/*
+import java.util.*;
+class Main
+{
+    public static void main(String []args)
+    {
+        //Write your code here
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        if(a>0)
+        {
+            for(int i=1;i<=a;i++)
+            {
+                if(i%2==1)
+                {
+                    for(int j=a;j>=i;j--)
+                    {
+                        System.out.print("% ");
+                    }
+                }
+                else
+                {
+                    for(int j=a;j>=i;j--)
+                    {
+                        System.out.print("& ");
+                    }
+                }
+                System.out.println();
+            }
+            
+        }
+        else
+        System.out.println("Invalid Input");
+    }
+}
+
+*/
+/* 
+import java.util.*;
+class Main
+{
+    public static void main(String []args)
+    {
+        //Write your code here
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        if(a>0)
+        {
+         if(a>=1&&a<=26)
+        {
+            for(int i=1;i<=a;i++)
+            {
+                char n=(char)('A'+(a-1));
+                for(int j=1;j<=a;j++)
+                {
+                        if(j<=a-i)
+                        {
+                        System.out.print("  ");
+                        }
+                        else
+                        {
+                            System.out.print(n+" ");
+                            n=(char)(n-1);
+                        }
+                }
+                System.out.println();
+            }
+        }
+        else
+        System.out.print("Invalid Row Value");
+        }
+        else
+        System.out.println("Invalid Input");
+    }
+}
+
+*/
+/*import java.util.*;
+class Main
+{
+    public static void main(String []args)
+    {
+        //Write your code here
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        int c=1;
+        if(a<0)
+        a=-a;
+        if(a>0)
+        {
+            for(int i=1;i<=a;i++)
+            {
+                for(int j=1;j<=i;j++)
+                {
+                    System.out.print(c);
+                    if(c==1)
+                    c=0;
+                    else
+                    c=1;
+                }
+                System.out.println();
+            }
+        }
+        else 
+        System.out.print("Invalid Input");
+    }
+}
+*/
